@@ -1,0 +1,25 @@
+@import './constants.scss';
+a,
+button,
+a:visited,
+a:focus,
+a:hover {
+  text-decoration: none;
+  padding: 0;
+}
+main {
+  margin-top: 65px;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  justify-content: center;
+  align-items: center;
+  min-height: $minFullWidth;
+  @media screen and (max-width: 900px) {
+    min-height: $mediumHeight;
+  }
+  @media screen and (max-width: 600px) {
+    margin-top: 56px;
+    min-height: $mobileHeight;
+  }
+}

@@ -1,0 +1,58 @@
+@import 'assets/styles/constants.scss';
+
+.signup {
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-link {
+      color: #425c69;
+      text-decoration: underline;
+      padding: 0 10px;
+    }
+    &-link:hover {
+      padding: 0 10px;
+      color: #000c18;
+    }
+    @media screen and (max-width: 900px) {
+      width: 90%;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}
+.signin__bottom-link:hover {
+  padding: 0 10px;
+  color: #000c18;
+}
+
+.signup-container {
+  min-height: $minFullWidth;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #425c69;
+  @media screen and (max-width: 900px) and (min-width: 600px) {
+    min-height: $mediumHeight;
+  }
+  @media screen and (max-width: 600px) {
+    min-height: $mobileHeight;
+  }
+}
+@media screen and (max-width: 900px) {
+  input[type='text'] {
+    padding: 10px;
+  }
+  input[type='password'] {
+    padding: 10px;
+  }
+}
+#login-helper-text,
+#name-helper-text,
+#password-helper-text,
+#repeat-helper-text {
+  font-size: 0.6rem;
+  line-height: 1;
+}

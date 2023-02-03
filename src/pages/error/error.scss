@@ -1,0 +1,20 @@
+@import 'assets/styles/constants.scss';
+
+.error {
+  height: $minFullWidth;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 900px) {
+    max-height: $mediumHeight;
+  }
+  @media screen and (max-width: 600px) {
+    min-height: $mobileHeight;
+  }
+  &__descr {
+    font-size: 40px;
+    font-weight: 600;
+    transform: translate(0px, -45px);
+    text-align: center;
+  }
+}

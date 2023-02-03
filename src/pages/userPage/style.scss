@@ -1,0 +1,14 @@
+@import './src/assets/styles/constants.scss';
+.userPage__form {
+  width: 100%;
+}
+.userPage {
+  height: $minFullWidth;
+  background-image: url(./../../assets/img/background2.jpg);
+  @media screen and (max-width: 900px) {
+    max-height: $mediumHeight;
+  }
+  @media screen and (max-width: 600px) {
+    min-height: $mobileHeight;
+  }
+}

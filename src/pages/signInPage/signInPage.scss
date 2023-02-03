@@ -1,0 +1,43 @@
+@import 'assets/styles/constants.scss';
+
+.signin {
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &-link {
+      color: #425c69;
+      text-decoration: underline;
+      padding: 0 10px;
+    }
+    @media screen and (max-width: 900px) {
+      width: 90%;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}
+.signin-container {
+  height: $minFullWidth;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #425c69;
+  @media screen and (max-width: 900px) {
+    max-height: $mediumHeight;
+  }
+  @media screen and (max-width: 600px) {
+    min-height: $mobileHeight;
+  }
+}
+@media screen and (max-width: 900px) {
+  input[type='text'] {
+    padding: 10px;
+  }
+  input[type='password'] {
+    padding: 10px;
+  }
+}
