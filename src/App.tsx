@@ -51,6 +51,7 @@ function App(): JSX.Element {
           <main>
             <Routes>
               <Route path="/" element={<Start />} />
+              <Route path="project-management-app" element={<Start />} />
               <Route path="sign-up" element={!userId ? <SignUpPage /> : <Navigate to="/boards" replace />} />
               <Route path="sign-in" element={!userId ? <SignInPage /> : <Navigate to="/boards" replace />} />
               <Route path="boards" element={userId ? <Boards /> : <Navigate to="/" replace />} />
